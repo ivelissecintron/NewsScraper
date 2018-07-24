@@ -12,11 +12,11 @@ var ArticleSchema = new Schema({
     link: {
         type: String,
         required: true
+    },
+    note: {
+        type: Schema.Types.ObjectId,
+       ref: "Note"
     }
-    //note: {
-        //type: Schema.Types.ObjectId,
-       // ref: "Note"
-    //}
 });
 
 //creating model 
